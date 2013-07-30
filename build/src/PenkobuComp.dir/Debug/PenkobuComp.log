@@ -1,0 +1,22 @@
+﻿2013/07/30 15:52:54 にビルドを開始しました。
+ノード 2 上のプロジェクト "C:\Users\kazuma\workspace\PenKobu\build\src\PenkobuComp.vcxproj" (build ターゲット)。
+InitializeBuildStatus:
+  "PenkobuComp.dir\Debug\PenkobuComp.unsuccessfulbuild" のタッチ タスクを実行しています。
+CustomBuild:
+  すべての出力が最新のものです。
+ClCompile:
+  すべての出力が最新のものです。
+ManifestResourceCompile:
+  すべての出力が最新のものです。
+Link:
+  すべての出力が最新のものです。
+Manifest:
+  すべての出力が最新のものです。
+FinalizeBuildStatus:
+  ファイル "PenkobuComp.dir\Debug\PenkobuComp.unsuccessfulbuild" を削除しています。
+  "PenkobuComp.dir\Debug\PenkobuComp.lastbuildstate" のタッチ タスクを実行しています。
+プロジェクト "C:\Users\kazuma\workspace\PenKobu\build\src\PenkobuComp.vcxproj" (build ターゲット) のビルドが完了しました。
+
+ビルドに成功しました。
+
+経過時間 00:00:00.13

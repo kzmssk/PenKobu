@@ -1,0 +1,325 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{9FA10F76-225C-4FD8-9483-8A86FF2B4117}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>PenkobuComp</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\kazuma\workspace\PenKobu\build\src\Debug\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">PenkobuComp.dir\Debug\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">PenkobuComp</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\kazuma\workspace\PenKobu\build\src\Release\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">PenkobuComp.dir\Release\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">PenkobuComp</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\kazuma\workspace\PenKobu\build\src\MinSizeRel\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">PenkobuComp.dir\MinSizeRel\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">PenkobuComp</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\kazuma\workspace\PenKobu\build\src\RelWithDebInfo\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">PenkobuComp.dir\RelWithDebInfo\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">PenkobuComp</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</GenerateManifest>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /Zm1000 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/include/opencv;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/gpu/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/contrib/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/legacy/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/objdetect/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/calib3d/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/features2d/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/video/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/highgui/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/ml/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/imgproc/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/flann/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/core/include;C:/Users/kazuma/workspace/PenKobu/include;C:/Users/kazuma/workspace/PenKobu/include/Penkobu;C:/Users/kazuma/workspace/PenKobu/build;C:/Users/kazuma/workspace/PenKobu/build/idl;C:/Program Files (x86)/OpenRTM-aist/1.1;C:/Program Files (x86)/OpenRTM-aist/1.1/rtm/idl;C:/Program Files (x86)/OpenRTM-aist/1.1/omniORB/4.1.5/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;__WIN32__;__x86__;__NT__;__OSVERSION__=4;_CRT_SECURE_NO_DEPRECATE;INCLUDE_stub_in_nt_dll;RTC_CORBA_CXXMAPPING11;_WIN32_WINNT=0x0500;__WIN32__;__x86__;__NT__;__OSVERSION__=4;_CRT_SECURE_NO_DEPRECATE;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>Debug</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>C:/Users/kazuma/workspace/PenKobu/build/src/Debug/PenkobuComp.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;__WIN32__;__x86__;__NT__;__OSVERSION__=4;_CRT_SECURE_NO_DEPRECATE;INCLUDE_stub_in_nt_dll;RTC_CORBA_CXXMAPPING11;_WIN32_WINNT=0x0500;__WIN32__;__x86__;__NT__;__OSVERSION__=4;_CRT_SECURE_NO_DEPRECATE;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/include/opencv;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/gpu/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/contrib/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/legacy/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/objdetect/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/calib3d/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/features2d/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/video/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/highgui/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/ml/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/imgproc/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/flann/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/core/include;C:/Users/kazuma/workspace/PenKobu/include;C:/Users/kazuma/workspace/PenKobu/include/Penkobu;C:/Users/kazuma/workspace/PenKobu/build;C:/Users/kazuma/workspace/PenKobu/build/idl;C:/Program Files (x86)/OpenRTM-aist/1.1;C:/Program Files (x86)/OpenRTM-aist/1.1/rtm/idl;C:/Program Files (x86)/OpenRTM-aist/1.1/omniORB/4.1.5/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/include/opencv;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/gpu/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/contrib/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/legacy/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/objdetect/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/calib3d/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/features2d/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/video/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/highgui/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/ml/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/imgproc/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/flann/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/core/include;C:/Users/kazuma/workspace/PenKobu/include;C:/Users/kazuma/workspace/PenKobu/include/Penkobu;C:/Users/kazuma/workspace/PenKobu/build;C:/Users/kazuma/workspace/PenKobu/build/idl;C:/Program Files (x86)/OpenRTM-aist/1.1;C:/Program Files (x86)/OpenRTM-aist/1.1/rtm/idl;C:/Program Files (x86)/OpenRTM-aist/1.1/omniORB/4.1.5/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;RTC110d.lib;coil110d.lib;omniORB415_rtd.lib;omniDynamic415_rtd.lib;omnithread34_rtd.lib;advapi32.lib;ws2_32.lib;mswsock.lib;opencv_gpu231d.lib;opencv_contrib231d.lib;opencv_legacy231d.lib;opencv_objdetect231d.lib;opencv_calib3d231d.lib;opencv_features2d231d.lib;opencv_video231d.lib;opencv_highgui231d.lib;opencv_ml231d.lib;opencv_imgproc231d.lib;opencv_flann231d.lib;opencv_core231d.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/lib"";C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/lib""/$(Configuration);;C:/Program Files (x86)/OpenRTM-aist/1.1/bin;C:/Program Files (x86)/OpenRTM-aist/1.1/bin/$(Configuration);;C:/Program Files (x86)/OpenRTM-aist/1.1/omniORB/4.1.5/lib/x86_win32;C:/Program Files (x86)/OpenRTM-aist/1.1/omniORB/4.1.5/lib/x86_win32/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>C:/Users/kazuma/workspace/PenKobu/build/src/Debug/PenkobuComp.lib</ImportLibrary>
+      <LinkIncremental>true</LinkIncremental>
+      <ProgramDataBaseFile>C:/Users/kazuma/workspace/PenKobu/build/src/Debug/PenkobuComp.pdb</ProgramDataBaseFile>
+      <StackReserveSize>10000000</StackReserveSize>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /Zm1000 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/include/opencv;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/gpu/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/contrib/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/legacy/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/objdetect/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/calib3d/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/features2d/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/video/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/highgui/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/ml/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/imgproc/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/flann/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/core/include;C:/Users/kazuma/workspace/PenKobu/include;C:/Users/kazuma/workspace/PenKobu/include/Penkobu;C:/Users/kazuma/workspace/PenKobu/build;C:/Users/kazuma/workspace/PenKobu/build/idl;C:/Program Files (x86)/OpenRTM-aist/1.1;C:/Program Files (x86)/OpenRTM-aist/1.1/rtm/idl;C:/Program Files (x86)/OpenRTM-aist/1.1/omniORB/4.1.5/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat></DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;__WIN32__;__x86__;__NT__;__OSVERSION__=4;_CRT_SECURE_NO_DEPRECATE;INCLUDE_stub_in_nt_dll;RTC_CORBA_CXXMAPPING11;_WIN32_WINNT=0x0500;__WIN32__;__x86__;__NT__;__OSVERSION__=4;_CRT_SECURE_NO_DEPRECATE;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>Release</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>C:/Users/kazuma/workspace/PenKobu/build/src/Release/PenkobuComp.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;__WIN32__;__x86__;__NT__;__OSVERSION__=4;_CRT_SECURE_NO_DEPRECATE;INCLUDE_stub_in_nt_dll;RTC_CORBA_CXXMAPPING11;_WIN32_WINNT=0x0500;__WIN32__;__x86__;__NT__;__OSVERSION__=4;_CRT_SECURE_NO_DEPRECATE;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/include/opencv;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/gpu/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/contrib/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/legacy/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/objdetect/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/calib3d/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/features2d/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/video/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/highgui/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/ml/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/imgproc/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/flann/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/core/include;C:/Users/kazuma/workspace/PenKobu/include;C:/Users/kazuma/workspace/PenKobu/include/Penkobu;C:/Users/kazuma/workspace/PenKobu/build;C:/Users/kazuma/workspace/PenKobu/build/idl;C:/Program Files (x86)/OpenRTM-aist/1.1;C:/Program Files (x86)/OpenRTM-aist/1.1/rtm/idl;C:/Program Files (x86)/OpenRTM-aist/1.1/omniORB/4.1.5/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/include/opencv;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/gpu/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/contrib/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/legacy/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/objdetect/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/calib3d/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/features2d/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/video/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/highgui/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/ml/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/imgproc/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/flann/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/core/include;C:/Users/kazuma/workspace/PenKobu/include;C:/Users/kazuma/workspace/PenKobu/include/Penkobu;C:/Users/kazuma/workspace/PenKobu/build;C:/Users/kazuma/workspace/PenKobu/build/idl;C:/Program Files (x86)/OpenRTM-aist/1.1;C:/Program Files (x86)/OpenRTM-aist/1.1/rtm/idl;C:/Program Files (x86)/OpenRTM-aist/1.1/omniORB/4.1.5/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;RTC110.lib;coil110.lib;omniORB415_rt.lib;omniDynamic415_rt.lib;omnithread34_rt.lib;advapi32.lib;ws2_32.lib;mswsock.lib;opencv_gpu231.lib;opencv_contrib231.lib;opencv_legacy231.lib;opencv_objdetect231.lib;opencv_calib3d231.lib;opencv_features2d231.lib;opencv_video231.lib;opencv_highgui231.lib;opencv_ml231.lib;opencv_imgproc231.lib;opencv_flann231.lib;opencv_core231.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/lib"";C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/lib""/$(Configuration);;C:/Program Files (x86)/OpenRTM-aist/1.1/bin;C:/Program Files (x86)/OpenRTM-aist/1.1/bin/$(Configuration);;C:/Program Files (x86)/OpenRTM-aist/1.1/omniORB/4.1.5/lib/x86_win32;C:/Program Files (x86)/OpenRTM-aist/1.1/omniORB/4.1.5/lib/x86_win32/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ImportLibrary>C:/Users/kazuma/workspace/PenKobu/build/src/Release/PenkobuComp.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/kazuma/workspace/PenKobu/build/src/Release/PenkobuComp.pdb</ProgramDataBaseFile>
+      <StackReserveSize>10000000</StackReserveSize>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /Zm1000 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/include/opencv;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/gpu/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/contrib/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/legacy/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/objdetect/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/calib3d/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/features2d/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/video/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/highgui/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/ml/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/imgproc/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/flann/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/core/include;C:/Users/kazuma/workspace/PenKobu/include;C:/Users/kazuma/workspace/PenKobu/include/Penkobu;C:/Users/kazuma/workspace/PenKobu/build;C:/Users/kazuma/workspace/PenKobu/build/idl;C:/Program Files (x86)/OpenRTM-aist/1.1;C:/Program Files (x86)/OpenRTM-aist/1.1/rtm/idl;C:/Program Files (x86)/OpenRTM-aist/1.1/omniORB/4.1.5/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat></DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;__WIN32__;__x86__;__NT__;__OSVERSION__=4;_CRT_SECURE_NO_DEPRECATE;INCLUDE_stub_in_nt_dll;RTC_CORBA_CXXMAPPING11;_WIN32_WINNT=0x0500;__WIN32__;__x86__;__NT__;__OSVERSION__=4;_CRT_SECURE_NO_DEPRECATE;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>MinSizeRel</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>C:/Users/kazuma/workspace/PenKobu/build/src/MinSizeRel/PenkobuComp.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;__WIN32__;__x86__;__NT__;__OSVERSION__=4;_CRT_SECURE_NO_DEPRECATE;INCLUDE_stub_in_nt_dll;RTC_CORBA_CXXMAPPING11;_WIN32_WINNT=0x0500;__WIN32__;__x86__;__NT__;__OSVERSION__=4;_CRT_SECURE_NO_DEPRECATE;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/include/opencv;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/gpu/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/contrib/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/legacy/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/objdetect/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/calib3d/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/features2d/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/video/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/highgui/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/ml/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/imgproc/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/flann/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/core/include;C:/Users/kazuma/workspace/PenKobu/include;C:/Users/kazuma/workspace/PenKobu/include/Penkobu;C:/Users/kazuma/workspace/PenKobu/build;C:/Users/kazuma/workspace/PenKobu/build/idl;C:/Program Files (x86)/OpenRTM-aist/1.1;C:/Program Files (x86)/OpenRTM-aist/1.1/rtm/idl;C:/Program Files (x86)/OpenRTM-aist/1.1/omniORB/4.1.5/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/include/opencv;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/gpu/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/contrib/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/legacy/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/objdetect/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/calib3d/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/features2d/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/video/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/highgui/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/ml/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/imgproc/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/flann/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/core/include;C:/Users/kazuma/workspace/PenKobu/include;C:/Users/kazuma/workspace/PenKobu/include/Penkobu;C:/Users/kazuma/workspace/PenKobu/build;C:/Users/kazuma/workspace/PenKobu/build/idl;C:/Program Files (x86)/OpenRTM-aist/1.1;C:/Program Files (x86)/OpenRTM-aist/1.1/rtm/idl;C:/Program Files (x86)/OpenRTM-aist/1.1/omniORB/4.1.5/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;RTC110.lib;coil110.lib;omniORB415_rt.lib;omniDynamic415_rt.lib;omnithread34_rt.lib;advapi32.lib;ws2_32.lib;mswsock.lib;opencv_gpu231.lib;opencv_contrib231.lib;opencv_legacy231.lib;opencv_objdetect231.lib;opencv_calib3d231.lib;opencv_features2d231.lib;opencv_video231.lib;opencv_highgui231.lib;opencv_ml231.lib;opencv_imgproc231.lib;opencv_flann231.lib;opencv_core231.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/lib"";C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/lib""/$(Configuration);;C:/Program Files (x86)/OpenRTM-aist/1.1/bin;C:/Program Files (x86)/OpenRTM-aist/1.1/bin/$(Configuration);;C:/Program Files (x86)/OpenRTM-aist/1.1/omniORB/4.1.5/lib/x86_win32;C:/Program Files (x86)/OpenRTM-aist/1.1/omniORB/4.1.5/lib/x86_win32/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ImportLibrary>C:/Users/kazuma/workspace/PenKobu/build/src/MinSizeRel/PenkobuComp.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/kazuma/workspace/PenKobu/build/src/MinSizeRel/PenkobuComp.pdb</ProgramDataBaseFile>
+      <StackReserveSize>10000000</StackReserveSize>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /Zm1000 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/include/opencv;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/gpu/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/contrib/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/legacy/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/objdetect/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/calib3d/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/features2d/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/video/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/highgui/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/ml/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/imgproc/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/flann/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/core/include;C:/Users/kazuma/workspace/PenKobu/include;C:/Users/kazuma/workspace/PenKobu/include/Penkobu;C:/Users/kazuma/workspace/PenKobu/build;C:/Users/kazuma/workspace/PenKobu/build/idl;C:/Program Files (x86)/OpenRTM-aist/1.1;C:/Program Files (x86)/OpenRTM-aist/1.1/rtm/idl;C:/Program Files (x86)/OpenRTM-aist/1.1/omniORB/4.1.5/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;__WIN32__;__x86__;__NT__;__OSVERSION__=4;_CRT_SECURE_NO_DEPRECATE;INCLUDE_stub_in_nt_dll;RTC_CORBA_CXXMAPPING11;_WIN32_WINNT=0x0500;__WIN32__;__x86__;__NT__;__OSVERSION__=4;_CRT_SECURE_NO_DEPRECATE;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>RelWithDebInfo</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>C:/Users/kazuma/workspace/PenKobu/build/src/RelWithDebInfo/PenkobuComp.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;__WIN32__;__x86__;__NT__;__OSVERSION__=4;_CRT_SECURE_NO_DEPRECATE;INCLUDE_stub_in_nt_dll;RTC_CORBA_CXXMAPPING11;_WIN32_WINNT=0x0500;__WIN32__;__x86__;__NT__;__OSVERSION__=4;_CRT_SECURE_NO_DEPRECATE;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/include/opencv;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/gpu/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/contrib/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/legacy/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/objdetect/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/calib3d/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/features2d/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/video/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/highgui/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/ml/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/imgproc/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/flann/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/core/include;C:/Users/kazuma/workspace/PenKobu/include;C:/Users/kazuma/workspace/PenKobu/include/Penkobu;C:/Users/kazuma/workspace/PenKobu/build;C:/Users/kazuma/workspace/PenKobu/build/idl;C:/Program Files (x86)/OpenRTM-aist/1.1;C:/Program Files (x86)/OpenRTM-aist/1.1/rtm/idl;C:/Program Files (x86)/OpenRTM-aist/1.1/omniORB/4.1.5/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/include/opencv;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/gpu/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/contrib/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/legacy/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/objdetect/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/calib3d/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/features2d/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/video/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/highgui/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/ml/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/imgproc/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/flann/include;C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/core/include;C:/Users/kazuma/workspace/PenKobu/include;C:/Users/kazuma/workspace/PenKobu/include/Penkobu;C:/Users/kazuma/workspace/PenKobu/build;C:/Users/kazuma/workspace/PenKobu/build/idl;C:/Program Files (x86)/OpenRTM-aist/1.1;C:/Program Files (x86)/OpenRTM-aist/1.1/rtm/idl;C:/Program Files (x86)/OpenRTM-aist/1.1/omniORB/4.1.5/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;RTC110.lib;coil110.lib;omniORB415_rt.lib;omniDynamic415_rt.lib;omnithread34_rt.lib;advapi32.lib;ws2_32.lib;mswsock.lib;opencv_gpu231.lib;opencv_contrib231.lib;opencv_legacy231.lib;opencv_objdetect231.lib;opencv_calib3d231.lib;opencv_features2d231.lib;opencv_video231.lib;opencv_highgui231.lib;opencv_ml231.lib;opencv_imgproc231.lib;opencv_flann231.lib;opencv_core231.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/lib"";C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/lib""/$(Configuration);;C:/Program Files (x86)/OpenRTM-aist/1.1/bin;C:/Program Files (x86)/OpenRTM-aist/1.1/bin/$(Configuration);;C:/Program Files (x86)/OpenRTM-aist/1.1/omniORB/4.1.5/lib/x86_win32;C:/Program Files (x86)/OpenRTM-aist/1.1/omniORB/4.1.5/lib/x86_win32/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>C:/Users/kazuma/workspace/PenKobu/build/src/RelWithDebInfo/PenkobuComp.lib</ImportLibrary>
+      <LinkIncremental>true</LinkIncremental>
+      <ProgramDataBaseFile>C:/Users/kazuma/workspace/PenKobu/build/src/RelWithDebInfo/PenkobuComp.pdb</ProgramDataBaseFile>
+      <StackReserveSize>10000000</StackReserveSize>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\src\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/Users/kazuma/workspace/PenKobu/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HC:/Users/kazuma/workspace/PenKobu -BC:/Users/kazuma/workspace/PenKobu/build --check-stamp-file C:\Users\kazuma\workspace\PenKobu\build\src\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/kazuma/workspace/PenKobu/src/CMakeLists.txt;C:\Users\kazuma\workspace\PenKobu\src\CMakeLists.txt;C:\Program Files (x86)\OpenRTM-aist\1.1\OpenCV2.3\OpenCVConfig.cmake;C:\Users\kazuma\workspace\PenKobu\src\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\kazuma\workspace\PenKobu\build\src\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/Users/kazuma/workspace/PenKobu/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HC:/Users/kazuma/workspace/PenKobu -BC:/Users/kazuma/workspace/PenKobu/build --check-stamp-file C:\Users\kazuma\workspace\PenKobu\build\src\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/kazuma/workspace/PenKobu/src/CMakeLists.txt;C:\Users\kazuma\workspace\PenKobu\src\CMakeLists.txt;C:\Program Files (x86)\OpenRTM-aist\1.1\OpenCV2.3\OpenCVConfig.cmake;C:\Users\kazuma\workspace\PenKobu\src\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\kazuma\workspace\PenKobu\build\src\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/Users/kazuma/workspace/PenKobu/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HC:/Users/kazuma/workspace/PenKobu -BC:/Users/kazuma/workspace/PenKobu/build --check-stamp-file C:\Users\kazuma\workspace\PenKobu\build\src\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/kazuma/workspace/PenKobu/src/CMakeLists.txt;C:\Users\kazuma\workspace\PenKobu\src\CMakeLists.txt;C:\Program Files (x86)\OpenRTM-aist\1.1\OpenCV2.3\OpenCVConfig.cmake;C:\Users\kazuma\workspace\PenKobu\src\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\kazuma\workspace\PenKobu\build\src\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/Users/kazuma/workspace/PenKobu/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HC:/Users/kazuma/workspace/PenKobu -BC:/Users/kazuma/workspace/PenKobu/build --check-stamp-file C:\Users\kazuma\workspace\PenKobu\build\src\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/kazuma/workspace/PenKobu/src/CMakeLists.txt;C:\Users\kazuma\workspace\PenKobu\src\CMakeLists.txt;C:\Program Files (x86)\OpenRTM-aist\1.1\OpenCV2.3\OpenCVConfig.cmake;C:\Users\kazuma\workspace\PenKobu\src\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\kazuma\workspace\PenKobu\build\src\CMakeFiles\generate.stamp</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\kazuma\workspace\PenKobu\include\Penkobu\Penkobu.h" />
+    <ClCompile Include="C:\Users\kazuma\workspace\PenKobu\src\PenkobuComp.cpp"  />
+    <ClCompile Include="C:\Users\kazuma\workspace\PenKobu\src\Penkobu.cpp"  />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:/Users/kazuma/workspace/PenKobu/build/ZERO_CHECK.vcxproj">
+      <Project>6C29B1DE-CBB5-4268-83D4-7C145A337459</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

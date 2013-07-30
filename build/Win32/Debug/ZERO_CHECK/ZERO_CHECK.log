@@ -1,0 +1,12 @@
+﻿2013/07/30 15:52:50 にビルドを開始しました。
+ノード 2 上のプロジェクト "C:\Users\kazuma\workspace\PenKobu\build\ZERO_CHECK.vcxproj" (build ターゲット)。
+InitializeBuildStatus:
+  "AlwaysCreate" が指定されたため "Win32\Debug\ZERO_CHECK\ZERO_CHECK.unsuccessfulbuild" を作成しています。
+FinalizeBuildStatus:
+  ファイル "Win32\Debug\ZERO_CHECK\ZERO_CHECK.unsuccessfulbuild" を削除しています。
+  "Win32\Debug\ZERO_CHECK\ZERO_CHECK.lastbuildstate" のタッチ タスクを実行しています。
+プロジェクト "C:\Users\kazuma\workspace\PenKobu\build\ZERO_CHECK.vcxproj" (build ターゲット) のビルドが完了しました。
+
+ビルドに成功しました。
+
+経過時間 00:00:00.85
