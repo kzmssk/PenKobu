@@ -1,6 +1,0 @@
-C:/Users/kazuma/workspace/PenKobu/build/CMakeFiles/ALL_BUILD.dir
-C:/Users/kazuma/workspace/PenKobu/build/src/CMakeFiles/Penkobu.dir
-C:/Users/kazuma/workspace/PenKobu/build/src/CMakeFiles/PenkobuComp.dir
-C:/Users/kazuma/workspace/PenKobu/build/CMakeFiles/ZERO_CHECK.dir
-C:/Users/kazuma/workspace/PenKobu/build/doc/CMakeFiles/doxygen_doc.dir
-C:/Users/kazuma/workspace/PenKobu/build/CMakeFiles/uninstall.dir
