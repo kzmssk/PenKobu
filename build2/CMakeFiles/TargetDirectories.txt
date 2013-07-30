@@ -1,0 +1,6 @@
+C:/Users/potepotato/Desktop/summercamp/PenKobu/build2/CMakeFiles/ALL_BUILD.dir
+C:/Users/potepotato/Desktop/summercamp/PenKobu/build2/src/CMakeFiles/Penkobu.dir
+C:/Users/potepotato/Desktop/summercamp/PenKobu/build2/src/CMakeFiles/PenkobuComp.dir
+C:/Users/potepotato/Desktop/summercamp/PenKobu/build2/CMakeFiles/ZERO_CHECK.dir
+C:/Users/potepotato/Desktop/summercamp/PenKobu/build2/doc/CMakeFiles/doxygen_doc.dir
+C:/Users/potepotato/Desktop/summercamp/PenKobu/build2/CMakeFiles/uninstall.dir

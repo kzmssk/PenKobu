@@ -8,6 +8,8 @@
  */
 
 #include "Penkobu.h"
+#include "Painter.h"
+Painter painter;
 
 // Module specification
 // <rtc-template block="module_spec">
@@ -120,6 +122,31 @@ RTC::ReturnCode_t Penkobu::onDeactivated(RTC::UniqueId ec_id)
 
 RTC::ReturnCode_t Penkobu::onExecute(RTC::UniqueId ec_id)
 {
+
+	int x, y;
+	int pressure;
+	
+	if(m_penPositionIn.isNew()){
+		
+	}
+	if(m_penPressureIn.isNew()){
+
+	}
+
+	cv::Mat image = painter.draw(x, y, pressure);
+
+			m_ImageOut = m_ImageIn;
+int length = image.cols * image.rows * 3; //‰æ‘œƒTƒCƒY‚ð“¾‚é
+		memcpy((void*)(&m_camera.pixels[0]),image.data, length);
+
+		m_cameraIn.write();
+
+
+
+	///m_camera = frame;
+
+	//m_cameraIn.write();
+
   return RTC::RTC_OK;
 }
 

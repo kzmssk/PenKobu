@@ -1,0 +1,13 @@
+﻿2013/07/30 17:01:26 にビルドを開始しました。
+     1>ノード 2 上のプロジェクト "C:\Users\potepotato\Desktop\summercamp\PenKobu\build2\CMakeFiles\2.8.11.2\CompilerIdC\CompilerIdC.vcxproj" (build ターゲット)。
+     1>InitializeBuildStatus:
+         "AlwaysCreate" が指定されたため "Debug\CompilerIdC.unsuccessfulbuild" を作成しています。
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /nologo /W0 /WX- /Od /Oy- /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TC /analyze- /errorReport:prompt CMakeCCompilerId.c
+         CMakeCCompilerId.c
+     1>CMakeCCompilerId.c : fatal error C1074: 'IDB' は PDB ファイルには無効な拡張子です:
+     1>プロジェクト "C:\Users\potepotato\Desktop\summercamp\PenKobu\build2\CMakeFiles\2.8.11.2\CompilerIdC\CompilerIdC.vcxproj" (build ターゲット) のビルドが終了しました -- 失敗。
+
+ビルドに失敗しました。
+
+経過時間 00:00:00.16
