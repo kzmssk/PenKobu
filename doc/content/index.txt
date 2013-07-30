@@ -1,4 +1,4 @@
-PenkobuName - English
+PenKobuName - English
 ========================
 
 .. toctree::
@@ -19,7 +19,7 @@ For a full list of classes and functions, see the `API documentation`_.
 Requirements
 ============
 
-Penkobu uses the `CMake build system`. You will need at least version
+PenKobu uses the `CMake build system`. You will need at least version
 2.8 to be able to build the component.
 
 .. _`CMAke build system`:
@@ -43,24 +43,24 @@ recommended method of installation in Windows.
   to take effect before using the component.
 
 The component can be launched by double-clicking the
-``PenkobuComp`` executable. The ``Penkobu`` library
+``PenKobuComp`` executable. The ``PenKobu`` library
 is available for loading into a manager, using the initialisation function
-``PenkobuInit``.
+``PenKobuInit``.
 
 From source
 -----------
 
-Follow these steps to install Penkobu from source in any operating
+Follow these steps to install PenKobu from source in any operating
 system:
 
 - Download the source, either from the repository or a source archive,
   and extract it somewhere::
 
-    tar -xvzf Penkobu-1.0.0.tar.gz
+    tar -xvzf PenKobu-1.0.0.tar.gz
 
 - Change to the directory containing the extracted source::
 
-    cd Penkobu-1.0.0
+    cd PenKobu-1.0.0
 
 - Create a directory called ``build``::
 
@@ -91,10 +91,10 @@ system:
 The component is now ready for use. See the next section for instructions on
 configuring the component.
 
-Penkobu can be launched in stand-alone mode by executing the
-``PenkobuComp`` executable (installed into ``${prefix}/components/bin``).
-Alternatively, ``libPenkobu.so`` can be loaded into a manager, using the
-initialisation function ``PenkobuInit``. This shared object can be found in
+PenKobu can be launched in stand-alone mode by executing the
+``PenKobuComp`` executable (installed into ``${prefix}/components/bin``).
+Alternatively, ``libPenKobu.so`` can be loaded into a manager, using the
+initialisation function ``PenKobuInit``. This shared object can be found in
 ``${prefix}/components/lib`` or ``${prefix}/components/lib64``.
 
 
@@ -117,16 +117,16 @@ The ports provided by the component are described below:
 =============== =========== ============================== =======
 Name            Type        Data type                      Purpose
 =============== =========== ============================== =======
-penPosition     InPort      RTC::TimedPoint2D              ペンの位置座標
-penPressure     InPort      RTC::TimedUShort               ペンの筆圧　0～1000程度
-camera          InPort      RTC::CameraImage               
+penPosition     InPort      RTC::TimedPoint2D              
+penPressure     InPort      RTC::TimedUShort               
+velocity        OutPort     RTC::TimedVelocity2D           
 =============== =========== ============================== =======
 
 Examples
 ========
 
 An example configuration file is provided in the
-``${prefix}/components/share/Penkobu/examples/conf/`` directory.
+``${prefix}/components/share/PenKobu/examples/conf/`` directory.
 
 Changelog
 =========

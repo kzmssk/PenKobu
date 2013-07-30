@@ -1,4 +1,4 @@
-set(hdrs Penkobu.h
+set(hdrs PenKobu.h
     PARENT_SCOPE
     )
 

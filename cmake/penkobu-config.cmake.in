@@ -1,54 +1,54 @@
-# Penkobu CMake config file
+# PenKobu CMake config file
 #
 # This file sets the following variables:
-# Penkobu_FOUND - Always TRUE.
-# Penkobu_INCLUDE_DIRS - Directories containing the Penkobu include files.
-# Penkobu_IDL_DIRS - Directories containing the Penkobu IDL files.
-# Penkobu_LIBRARIES - Libraries needed to use Penkobu.
-# Penkobu_DEFINITIONS - Compiler flags for Penkobu.
-# Penkobu_VERSION - The version of Penkobu found.
-# Penkobu_VERSION_MAJOR - The major version of Penkobu found.
-# Penkobu_VERSION_MINOR - The minor version of Penkobu found.
-# Penkobu_VERSION_REVISION - The revision version of Penkobu found.
-# Penkobu_VERSION_CANDIDATE - The candidate version of Penkobu found.
+# PenKobu_FOUND - Always TRUE.
+# PenKobu_INCLUDE_DIRS - Directories containing the PenKobu include files.
+# PenKobu_IDL_DIRS - Directories containing the PenKobu IDL files.
+# PenKobu_LIBRARIES - Libraries needed to use PenKobu.
+# PenKobu_DEFINITIONS - Compiler flags for PenKobu.
+# PenKobu_VERSION - The version of PenKobu found.
+# PenKobu_VERSION_MAJOR - The major version of PenKobu found.
+# PenKobu_VERSION_MINOR - The minor version of PenKobu found.
+# PenKobu_VERSION_REVISION - The revision version of PenKobu found.
+# PenKobu_VERSION_CANDIDATE - The candidate version of PenKobu found.
 
-message(STATUS "Found Penkobu-@PROJECT_VERSION@")
-set(Penkobu_FOUND TRUE)
+message(STATUS "Found PenKobu-@PROJECT_VERSION@")
+set(PenKobu_FOUND TRUE)
 
 find_package(<dependency> REQUIRED)
 
-#set(Penkobu_INCLUDE_DIRS
+#set(PenKobu_INCLUDE_DIRS
 #    "@CMAKE_INSTALL_PREFIX@/include/@PROJECT_NAME_LOWER@-@PROJECT_VERSION_MAJOR@"
 #    ${<dependency>_INCLUDE_DIRS}
 #    )
 #
-#set(Penkobu_IDL_DIRS
+#set(PenKobu_IDL_DIRS
 #    "@CMAKE_INSTALL_PREFIX@/include/@PROJECT_NAME_LOWER@-@PROJECT_VERSION_MAJOR@/idl")
-set(Penkobu_INCLUDE_DIRS
+set(PenKobu_INCLUDE_DIRS
     "@CMAKE_INSTALL_PREFIX@/include/@CPACK_PACKAGE_FILE_NAME@"
     ${<dependency>_INCLUDE_DIRS}
     )
-set(Penkobu_IDL_DIRS
+set(PenKobu_IDL_DIRS
     "@CMAKE_INSTALL_PREFIX@/include/@CPACK_PACKAGE_FILE_NAME@/idl")
 
 
 if(WIN32)
-    set(Penkobu_LIBRARIES
+    set(PenKobu_LIBRARIES
         "@CMAKE_INSTALL_PREFIX@/@LIB_INSTALL_DIR@/@CMAKE_SHARED_LIBRARY_PREFIX@@PROJECT_NAME_LOWER@@CMAKE_STATIC_LIBRARY_SUFFIX@"
         ${<dependency>_LIBRARIES}
         )
 else(WIN32)
-    set(Penkobu_LIBRARIES
+    set(PenKobu_LIBRARIES
         "@CMAKE_INSTALL_PREFIX@/@LIB_INSTALL_DIR@/@CMAKE_SHARED_LIBRARY_PREFIX@@PROJECT_NAME_LOWER@@CMAKE_SHARED_LIBRARY_SUFFIX@"
         ${<dependency>_LIBRARIES}
         )
 endif(WIN32)
 
-set(Penkobu_DEFINITIONS ${<dependency>_DEFINITIONS})
+set(PenKobu_DEFINITIONS ${<dependency>_DEFINITIONS})
 
-set(Penkobu_VERSION @PROJECT_VERSION@)
-set(Penkobu_VERSION_MAJOR @PROJECT_VERSION_MAJOR@)
-set(Penkobu_VERSION_MINOR @PROJECT_VERSION_MINOR@)
-set(Penkobu_VERSION_REVISION @PROJECT_VERSION_REVISION@)
-set(Penkobu_VERSION_CANDIDATE @PROJECT_VERSION_CANDIDATE@)
+set(PenKobu_VERSION @PROJECT_VERSION@)
+set(PenKobu_VERSION_MAJOR @PROJECT_VERSION_MAJOR@)
+set(PenKobu_VERSION_MINOR @PROJECT_VERSION_MINOR@)
+set(PenKobu_VERSION_REVISION @PROJECT_VERSION_REVISION@)
+set(PenKobu_VERSION_CANDIDATE @PROJECT_VERSION_CANDIDATE@)
 

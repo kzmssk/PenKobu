@@ -1,4 +1,4 @@
-Penkobu - 日本語
+PenKobu - 日本語
 =======================
 
 
@@ -13,9 +13,9 @@ Penkobu - 日本語
 条件
 ====
 
-PenkobuはOpenRTM-aist 1.0.0以上のC++版が必要です。
+PenKobuはOpenRTM-aist 1.0.0以上のC++版が必要です。
 
-Penkobuは CMake_ を使います。CMake 2.8以上が必要です。
+PenKobuは CMake_ を使います。CMake 2.8以上が必要です。
 
 .. _CMAke:
    http://www.cmake.org
@@ -36,8 +36,8 @@ Windowsのユーザはインストーラパッケージを使用してコンポ�
 - 環境変数の変更を適用するため、コンポーネントを使用する前にコンピューターを
   再起動する必要があるかもしれません。
 
-Penkobuは ``PenkobuComp`` の実行をダブルクリックして実行することが
-できます。あるいは、 ``Penkobu`` を初期化関数の ``PenkobuInit`` を利用して、
+PenKobuは ``PenKobuComp`` の実行をダブルクリックして実行することが
+できます。あるいは、 ``PenKobu`` を初期化関数の ``PenKobuInit`` を利用して、
 マネージャにロードすることができます。
 
 ソースから
@@ -47,11 +47,11 @@ Penkobuは ``PenkobuComp`` の実行をダブルクリックして実行する�
 
 - ソースをダウンロードして解凍してください::
 
-    tar -xvzf Penkobu-1.0.0.tar.gz
+    tar -xvzf PenKobu-1.0.0.tar.gz
 
 - 解凍されたフォルダに入ってください::
 
-    cd Penkobu-1.0.0
+    cd PenKobu-1.0.0
 
 - ``build`` フォルダを作ってください::
 
@@ -82,9 +82,9 @@ Penkobuは ``PenkobuComp`` の実行をダブルクリックして実行する�
 ここまでで、コンポーネントが使えるようになりました。コンフィグレーションは次のセクションを
 参照してください。
 
-Penkobuは ``PenkobuComp`` を実行（ ``${prefix}/components/bin`` に
+PenKobuは ``PenKobuComp`` を実行（ ``${prefix}/components/bin`` に
 インストールされます）することでスタンドアローンモードで実行することができます。
-あるいは、 ``libPenkobu.so`` を初期化関数の ``PenkobuInit`` を利用して、
+あるいは、 ``libPenKobu.so`` を初期化関数の ``PenKobuInit`` を利用して、
 マネージャにロードすることができます。このライブラリは ``${prefix}/components/lib`` 
 または ``${prefix}/components/lib64`` にインストールされます。
 
@@ -109,15 +109,15 @@ mode             int                0
 =============== =========== ============================== ====
 ポート名        ポート型    データ型                       意味
 =============== =========== ============================== ====
-penPosition     InPort      RTC::TimedPoint2D              ペンの位置座標
-penPressure     InPort      RTC::TimedUShort               ペンの筆圧　0～1000程度
-camera          InPort      RTC::CameraImage               
+penPosition     InPort      RTC::TimedPoint2D              
+penPressure     InPort      RTC::TimedUShort               
+velocity        OutPort     RTC::TimedVelocity2D           
 =============== =========== ============================== ====
 
 例
 ==
 
-例のrtc.confファイルは ``${prefix}/components/share/Penkobu/examples/conf/``
+例のrtc.confファイルは ``${prefix}/components/share/PenKobu/examples/conf/``
 フォルダにインストールされています。
 
 Changelog
