@@ -123,23 +123,27 @@ RTC::ReturnCode_t Penkobu::onDeactivated(RTC::UniqueId ec_id)
 RTC::ReturnCode_t Penkobu::onExecute(RTC::UniqueId ec_id)
 {
 
-	int x, y;
-	int pressure;
+	int x = 0, y = 0;
+	int pressure = 0;
 	
 	if(m_penPositionIn.isNew()){
-		
+		m_penPositionIn.read();
+		x = m_penPosition.data.x;
+		y = m_penPosition.data.y;
 	}
 	if(m_penPressureIn.isNew()){
-
+		m_penPressureIn.read();
+		pressure = m_penPressure.data;
 	}
 
 	cv::Mat image = painter.draw(x, y, pressure);
 
-			m_ImageOut = m_ImageIn;
-int length = image.cols * image.rows * 3; //画像サイズを得る
-		memcpy((void*)(&m_camera.pixels[0]),image.data, length);
+		//	m_ImageOut = m_ImageIn;
+	//int length = image.cols * image.rows * 3; //画像サイズを得る
+	//memcpy((void*)(&m_camera.pixels[0]), image.data, length);
 
-		m_cameraIn.write();
+	//m_cameraIn.wri
+		//.write();
 
 
 

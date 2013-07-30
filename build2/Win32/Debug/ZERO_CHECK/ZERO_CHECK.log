@@ -1,12 +1,16 @@
-﻿2013/07/30 17:00:23 にビルドを開始しました。
-     1>ノード 2 上のプロジェクト "C:\Users\potepotato\Desktop\summercamp\PenKobu\build2\ZERO_CHECK.vcxproj" (build ターゲット)。
-     1>InitializeBuildStatus:
+﻿2013/07/30 17:20:20 にビルドを開始しました。
+     1>ノード 2 上のプロジェクト "C:\Users\Takeuchi\Dropbox\Projects\PenKobu2\build2\ZERO_CHECK.vcxproj" (build ターゲット)。
+     1>PrepareForBuild:
+         ディレクトリ "C:\Users\Takeuchi\Dropbox\Projects\PenKobu2\build2\Debug\" を作成しています。
+       InitializeBuildStatus:
          "AlwaysCreate" が指定されたため "Win32\Debug\ZERO_CHECK\ZERO_CHECK.unsuccessfulbuild" を作成しています。
-       FinalizeBuildStatus:
-         ファイル "Win32\Debug\ZERO_CHECK\ZERO_CHECK.unsuccessfulbuild" を削除しています。
-         "Win32\Debug\ZERO_CHECK\ZERO_CHECK.lastbuildstate" のタッチ タスクを実行しています。
-     1>プロジェクト "C:\Users\potepotato\Desktop\summercamp\PenKobu\build2\ZERO_CHECK.vcxproj" (build ターゲット) のビルドが完了しました。
+       CustomBuild:
+         Checking Build System
+         CMake is re-running because C:/Users/potepotato/Desktop/summercamp/PenKobu/build2/CMakeFiles/generate.stamp dependency file is missing.
+     1>CUSTOMBUILD : CMake error : The source directory "C:/Users/potepotato/Desktop/summercamp/PenKobu" does not appear to contain CMakeLists.txt.
+         Specify --help for usage, or press the help button on the CMake GUI.
+     1>プロジェクト "C:\Users\Takeuchi\Dropbox\Projects\PenKobu2\build2\ZERO_CHECK.vcxproj" (build ターゲット) のビルドが終了しました -- 失敗。
 
-ビルドに成功しました。
+ビルドに失敗しました。
 
-経過時間 00:00:00.08
+経過時間 00:00:00.06

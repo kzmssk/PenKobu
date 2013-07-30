@@ -15,21 +15,22 @@
 #pragma comment(lib,"opencv_features2d245.lib")
 #endif
 
+const int screenWidth = 1280;				//画面の解像度
+const int screenHenght = 960;				//画面の解像度
+const double scale = screenWidth / 1920.0;	//ワコムタブレットが1920なので、それに合わせる
+
 class Painter{
 private:
 	cv::Mat lineScreen;
 	cv::Mat mainScreen;
 
-	const int screenWidth = 1280;				//画面の解像度
-	const int screenHenght = 960;				//画面の解像度
-	const double scale = screenWidth / 1920.0;	//ワコムタブレットが1920なので、それに合わせる
-
+	
 	std::string windowName;
 public:
 	Painter(){
 		cv::Mat lineScreen(screenHenght, screenWidth, CV_8UC3, cv::Scalar(255, 255, 255));
 		cv::Mat mainScreen(screenHenght, screenWidth, CV_8UC3);
-		//window設定
+		////window設定
 		windowName = "painter";
 		cv::namedWindow(windowName, 1);
 
@@ -50,7 +51,7 @@ public:
 		//マウスを描画する
 		cv::circle(mainScreen, cv::Point(x*scale, y*scale), 2, cv::Scalar(200, 0, 200), -1, CV_AA);
 
-		//cv::imshow(windowName, mainScreen);
+		cv::imshow(windowName, mainScreen);
 		return mainScreen;
 	}
 };

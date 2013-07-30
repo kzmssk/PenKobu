@@ -1,19 +1,15 @@
-﻿2013/07/30 17:00:23 にビルドを開始しました。
-     1>ノード 2 上のプロジェクト "C:\Users\potepotato\Desktop\summercamp\PenKobu\build2\src\PenkobuComp.vcxproj" (build ターゲット)。
+﻿2013/07/30 17:20:20 にビルドを開始しました。
+     1>ノード 2 上のプロジェクト "C:\Users\Takeuchi\Dropbox\Projects\PenKobu2\build2\src\PenkobuComp.vcxproj" (build ターゲット)。
+     1>c:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.Targets(1422,5): warning : The referenced project 'C:/Users/potepotato/Desktop/summercamp/PenKobu/build2/ZERO_CHECK.vcxproj' does not exist.
      1>InitializeBuildStatus:
          "PenkobuComp.dir\Debug\PenkobuComp.unsuccessfulbuild" のタッチ タスクを実行しています。
        CustomBuild:
-         すべての出力が最新のものです。
-       ClCompile:
-         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/include" /I"C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/include/opencv" /I"C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/gpu/include" /I"C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/contrib/include" /I"C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/legacy/include" /I"C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/objdetect/include" /I"C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/calib3d/include" /I"C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/features2d/include" /I"C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/video/include" /I"C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/highgui/include" /I"C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/ml/include" /I"C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/imgproc/include" /I"C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/flann/include" /I"C:/Program Files (x86)/OpenRTM-aist/1.1/OpenCV2.3/modules/core/include" /IC:/Users/potepotato/Desktop/summercamp/PenKobu/include /IC:/Users/potepotato/Desktop/summercamp/PenKobu/include/Penkobu /IC:/Users/potepotato/Desktop/summercamp/PenKobu/build2 /IC:/Users/potepotato/Desktop/summercamp/PenKobu/build2/idl /I"C:/Program Files (x86)/OpenRTM-aist/1.1" /I"C:/Program Files (x86)/OpenRTM-aist/1.1/rtm/idl" /I"C:/Program Files (x86)/OpenRTM-aist/1.1/omniORB/4.1.5/include" /nologo /W1 /WX- /O2 /Oy- /D __WIN32__ /D __x86__ /D __NT__ /D __OSVERSION__=4 /D _CRT_SECURE_NO_DEPRECATE /D INCLUDE_stub_in_nt_dll /D RTC_CORBA_CXXMAPPING11 /D _WIN32_WINNT=0x0500 /D __WIN32__ /D __x86__ /D __NT__ /D __OSVERSION__=4 /D _CRT_SECURE_NO_DEPRECATE /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"PenkobuComp.dir\Debug\\" /Fd"C:/Users/potepotato/Desktop/summercamp/PenKobu/build2/src/Debug/PenkobuComp.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\src\PenkobuComp.cpp ..\..\src\Penkobu.cpp
-         PenkobuComp.cpp
-     1>C:/Program Files (x86)/OpenRTM-aist/1.1/omniORB/4.1.5/include\omniORB4/omniInternal.h(224): fatal error C1083: include ファイルを開けません。'stddef.h': No such file or directory
-         Penkobu.cpp
-     1>C:/Users/potepotato/Desktop/summercamp/PenKobu/include/Penkobu\Penkobu.h : warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
-     1>C:/Program Files (x86)/OpenRTM-aist/1.1/omniORB/4.1.5/include\omniORB4/omniInternal.h(224): fatal error C1083: include ファイルを開けません。'stddef.h': No such file or directory
-         コードを生成中...
-     1>プロジェクト "C:\Users\potepotato\Desktop\summercamp\PenKobu\build2\src\PenkobuComp.vcxproj" (build ターゲット) のビルドが終了しました -- 失敗。
+         Building Custom Rule C:/Users/potepotato/Desktop/summercamp/PenKobu/src/CMakeLists.txt
+         CMake is re-running because C:\Users\potepotato\Desktop\summercamp\PenKobu\build2\src\CMakeFiles\generate.stamp dependency file is missing.
+     1>CUSTOMBUILD : CMake error : The source directory "C:/Users/potepotato/Desktop/summercamp/PenKobu" does not appear to contain CMakeLists.txt.
+         Specify --help for usage, or press the help button on the CMake GUI.
+     1>プロジェクト "C:\Users\Takeuchi\Dropbox\Projects\PenKobu2\build2\src\PenkobuComp.vcxproj" (build ターゲット) のビルドが終了しました -- 失敗。
 
 ビルドに失敗しました。
 
-経過時間 00:00:00.24
+経過時間 00:00:00.04
