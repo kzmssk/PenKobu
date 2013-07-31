@@ -17,6 +17,7 @@ sys.path.append(".")
 import RTC
 import OpenRTM_aist
 
+import penkobugui
 
 # Import Service implementation class
 # <rtc-template block="service_impl">
@@ -51,12 +52,20 @@ penkobu_spec = ["implementation_id", "PenKobu",
 # 
 # 
 class PenKobu(OpenRTM_aist.DataFlowComponentBase):
-	
 	##
 	# @brief constructor
 	# @param manager Maneger Object
 	# 
+	x=0
+	y=0
+	p=0
+	cb=None
+	
 	def __init__(self, manager):
+		self.x=0
+		self.y=0
+		self.p=0
+		
 		OpenRTM_aist.DataFlowComponentBase.__init__(self, manager)
 
 		self._d_penPosition = RTC.TimedPoint2D(RTC.Time(0,0),0)
@@ -67,10 +76,6 @@ class PenKobu(OpenRTM_aist.DataFlowComponentBase):
 		"""
 		"""
 		self._penPressureIn = OpenRTM_aist.InPort("penPressure", self._d_penPressure)
-		self._d_velocity = RTC.TimedVelocity2D(RTC.Time(0,0),0)
-		"""
-		"""
-		self._velocityOut = OpenRTM_aist.OutPort("velocity", self._d_velocity)
 
 
 		
@@ -106,7 +111,6 @@ class PenKobu(OpenRTM_aist.DataFlowComponentBase):
 		self.addInPort("penPressure",self._penPressureIn)
 		
 		# Set OutPort buffers
-		self.addOutPort("velocity",self._velocityOut)
 		
 		# Set service provider to Ports
 		
@@ -167,7 +171,6 @@ class PenKobu(OpenRTM_aist.DataFlowComponentBase):
 		#
 		#
 	def onActivated(self, ec_id):
-	
 		return RTC.RTC_OK
 	
 		##
@@ -195,7 +198,17 @@ class PenKobu(OpenRTM_aist.DataFlowComponentBase):
 		#
 		#
 	def onExecute(self, ec_id):
-	
+		#read data from wacom tablet
+		if self._penPositionIn.isNew():
+		  self._penPositionIn.read()
+		if self._penPressureIn.isNew():
+		  self._penPressureIn.read()
+		print self._d_penPosition.data
+		[self.x, self.y]=self._d_penPosition.data
+		self.p=self._d_penPressure.data
+		if self.cb != None:
+		 	self.cb(self.x, self.y, self.p)		  
+		  
 		return RTC.RTC_OK
 	
 	#	##
@@ -268,9 +281,16 @@ class PenKobu(OpenRTM_aist.DataFlowComponentBase):
 	#def onRateChanged(self, ec_id):
 	#
 	#	return RTC.RTC_OK
-	
-
-
+	def set_callback(self, cb):
+		self.callback = cb
+		
+	def get_pos(self):
+		print "===get_pos==="
+		pos=[]
+		pos.append(self.x)
+		pos.append(self.y)
+		pos.append(self.p)
+		return pos
 
 def PenKobuInit(manager):
     profile = OpenRTM_aist.Properties(defaults_str=penkobu_spec)
@@ -280,15 +300,25 @@ def PenKobuInit(manager):
 
 def MyModuleInit(manager):
     PenKobuInit(manager)
-
     # Create a component
-    comp = manager.createComponent("PenKobu")
-
+    #comp = manager.createComponent("PenKobu")
+    
 def main():
+	#create penkobu gui
+	penkobuCanvas=penkobugui.PenKobuGui()
+	penkobuCanvas.master.title("penkobugui")
+	
 	mgr = OpenRTM_aist.Manager.init(sys.argv)
 	mgr.setModuleInitProc(MyModuleInit)
 	mgr.activateManager()
-	mgr.runManager()
+	
+	comp=mgr.createComponent("PenKobu")
+#	penkobuCanvas.get_on_update(comp.get_pos())
+	comp.set_callback(penkobuCanvas.set_pos)
+	
+	mgr.runManager(True)
+	
+	penkobuCanvas.mainloop()
 
 if __name__ == "__main__":
 	main()
