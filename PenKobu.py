@@ -203,11 +203,18 @@ class PenKobu(OpenRTM_aist.DataFlowComponentBase):
 		  self._penPositionIn.read()
 		if self._penPressureIn.isNew():
 		  self._penPressureIn.read()
-		print self._d_penPosition.data
-		[self.x, self.y]=self._d_penPosition.data
-		self.p=self._d_penPressure.data
-		if self.cb != None:
-		 	self.cb(self.x, self.y, self.p)		  
+#		print self._d_penPosition.data
+#		[self.x, self.y]=self._d_penPosition.data
+#		self.p=self._d_penPressure.data
+		self.x+=1
+		self.y+=1
+		self.p=0
+		if self.x>500:
+			self.x=1
+			self.y=1
+			#self.p=1
+		if self.callback != None:
+		 	self.callback(self.x, self.y, self.p)		  
 		  
 		return RTC.RTC_OK
 	
@@ -282,7 +289,9 @@ class PenKobu(OpenRTM_aist.DataFlowComponentBase):
 	#
 	#	return RTC.RTC_OK
 	def set_callback(self, cb):
+		print "set_callback"
 		self.callback = cb
+		print self.callback
 		
 	def get_pos(self):
 		print "===get_pos==="
@@ -315,6 +324,7 @@ def main():
 	comp=mgr.createComponent("PenKobu")
 #	penkobuCanvas.get_on_update(comp.get_pos())
 	comp.set_callback(penkobuCanvas.set_pos)
+	penkobuCanvas.set_comp(comp)
 	
 	mgr.runManager(True)
 	
